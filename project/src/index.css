@@ -1,0 +1,21 @@
+:root {
+--font: 'Opnen Sans', sans-serif;
+--primary-color :#fe724c;
+--primary-hover-color:#b14122;
+--text-color: #000;
+--text-secondary-color: #5B5B5E;
+--white-color: #FFFFFF;
+--separator-color: #d4d6e0;
+}
+
+
+body {
+font-family: 'Opnen Sans', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 700px;
+
+}
+
+.link {
+    background: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 0 rgba(211, 209, 216, 0.3);
+    width: 38px;
+    height: 38px;
+    padding: 10px 10px 8px 14px;
+  
+  
+
+}
+.header-name {
+margin-right: 160px;
+}
+.header-button {
+    justify-content: start;
+  
+
+}
+.header-button-img {
+  margin-right: 3px;
+}
+
+.product-cart {
+  
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+.product-description {
+    display: flex;
+    flex-direction: column;
+
+}
+.product-img {
+    border-radius: 10px;
+    width: 323px;
+    height: 248px;
+
+}
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f2f3;
+width: 201px;
+margin-bottom: 20px;
+padding: 10px;
+
+}
+
+.price {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #000;
+
+	
+}
+.price-number {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 19px;
+color: #000;
+
+	
+}
+
+.currency {
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #9796a1;
+margin-left: 5px;
+
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    width: 180px;
+    
+
+	
+    /* font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000; */
+    
+    
+}
+.rating-star {
+    background: var(--white-color);
+	padding: 5px 10px;
+	border-radius: 20px;
+	color: #111719;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	box-shadow: 0px 6.0714287757873535px 24.285715103149414px 0px rgba(254, 114, 76, 0.20);
+}
+
+.description { 
+    margin-left: 15px;
+
+}
+.description-title {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+color: #5b5b5e;
+margin-bottom: 20px;
+
+
+}
+.description-text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #5b5b5e;
+    margin-left: 10px;
+}
