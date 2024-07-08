@@ -1,0 +1,18 @@
+[
+   {
+     "img" : "/img.png",
+     "id": 1,
+     "name" : "user1",
+     "email": "user1@example.com",
+     "password": "п",
+     "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+   },
+   {
+     "img" : "/img.png",
+     "id": 2,
+     "name" : "user2",
+     "email": "user2@example.com",
+     "password": "password2",
+     "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5hbWUgU2NhbGVkIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+   }
+ ]

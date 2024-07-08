@@ -1,0 +1,12 @@
+
+.field {
+   display: flex;
+   flex-direction: column;
+}
+
+.label {
+   font-family: var(--font-family);
+font-weight: 400;
+font-size: 17px;
+color: #c4c4c4;
+}
