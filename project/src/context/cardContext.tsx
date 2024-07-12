@@ -5,7 +5,7 @@ type  CartItems = {
   
   };
 
-const CartContext = createContext <
+const CartContext = createContext<
     {
         cartItems: CartItems,
         setCartItems: Dispatch<SetStateAction<CartItems>>,

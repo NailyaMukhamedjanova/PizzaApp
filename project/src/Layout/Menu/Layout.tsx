@@ -4,6 +4,7 @@ import styles from "./Layout.module.css";
 import cn from "classnames";
 import {useState} from 'react';
 import { useEffect } from "react";
+import { UseCart } from "../../context/cardContext";
 
 type User = {
     id: number; 
@@ -13,9 +14,14 @@ type User = {
     name: string; 
     img: string; 
 } | null 
- 
+
+
+
 export default function Layout() {
 const  [userData, setUserData] = useState<User>(null);
+const navigate =  useNavigate();
+const {cartItems, setCartItems}= UseCart();
+const [cartItemsCount, setCartItemsCount] = useState<number>(0);
 
 
 useEffect(()=> {
@@ -26,11 +32,23 @@ setUserData(userDataFromStorage);
 },
 []
 )
+useEffect(()=> {
+    const storedCartItems = JSON.parse(
+        localStorage.getItem('cartItems') || "{}"
+    );
+    setCartItems(storedCartItems);
+    },
+    [cartItems]);
+
+    useEffect(()=> {
+        const totalCount = Object.values(cartItems).reduce((acc:number, cur: number) => acc + cur, 0);
+        setCartItemsCount(totalCount);
+        },
+        [cartItems]);
 
 
 
 
-const navigate = useNavigate();
 const handleLogout = () => {
     localStorage.removeItem("accessToken");
     localStorage.removeItem("userData"); 
@@ -58,7 +76,7 @@ const handleLogout = () => {
                 <div className={styles["icondiv"]}>
                     <img src="/carticon.svg" className={styles["icon"]} />
                     <NavLink to={"/cart"} className={({ isActive }) => cn(styles["link"],
-                        { [styles.active]: isActive })}>Корзина <span className={styles["icon-span"]}> 10</span></NavLink>
+                        { [styles.active]: isActive })}>Корзина <span className={styles["icon-span"]}> {cartItemsCount}</span></NavLink>
                 </div>
 
 
